@@ -61,9 +61,9 @@ public class LiftsFragment extends Fragment {
             }
             if (doc!=null) {
                 String site = doc.body().html();
-                int i =0;
-                int b = site.indexOf("data-class=\"lifts\">", i);
-                i = site.indexOf("lift-span",b);
+               // int i =0;
+                int b = site.indexOf("data-class=\"lifts\">");
+                int i = site.indexOf("lift-span",b);
                while (b >= 0 && i>=0) {
                    String s = site.substring(b,i);
                    lifts.add(s);

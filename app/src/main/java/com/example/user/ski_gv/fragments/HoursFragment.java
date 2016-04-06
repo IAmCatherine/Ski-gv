@@ -23,22 +23,19 @@ import java.io.IOException;
 public class HoursFragment extends Fragment {
     private static final int LAYOUT = R.layout.hours_activity;
     private View view;
-    TextView text;
-
-
+    private TextView text;
     @Nullable
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         view = inflater.inflate(LAYOUT, null);
         text =(TextView)view.findViewById(R.id.textView);
-        text =(TextView)view.findViewById(R.id.textView);
-       Json json = new Json();
-        json.execute();
+       GetInfo getInfo = new GetInfo();
+        getInfo.execute();
         return view;
     }
 
-    public class Json extends AsyncTask<Void,Void,Void>{
+    public class GetInfo extends AsyncTask<Void,Void,Void>{
         String stringBuilder;
         @Override
         protected Void doInBackground(Void... params) {
@@ -65,7 +62,6 @@ public class HoursFragment extends Fragment {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             text.setText(stringBuilder.toUpperCase());
-
         }
     }
 }
