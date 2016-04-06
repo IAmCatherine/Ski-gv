@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="621dp">
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView" >
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView" >
+
+            <AbsoluteLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:src="@drawable/mapmocut"
+                />
+
+                <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lift4"
+                android:layout_x="111dp"
+                android:layout_y="464dp"
+                android:contentDescription="@string/app_name" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lift3"
+                android:layout_x="341dp"
+                android:layout_y="240dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lift1"
+                android:layout_x="753dp"
+                android:layout_y="303dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lift2"
+                android:layout_x="257dp"
+                android:layout_y="226dp" />
+
+            </AbsoluteLayout>
+        </ScrollView>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="336dp"
+            android:layout_height="151dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+            android:background="#AA000000"
+            android:textColor="#ffffff"
+            android:text="@string/NOOOO"
+            android:visibility="invisible"
+            android:layout_x="19dp"
+            android:layout_y="404dp"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+</LinearLayout>

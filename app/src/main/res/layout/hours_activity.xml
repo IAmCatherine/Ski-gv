@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="413dp"
+        android:layout_height="613dp"
+        android:id="@+id/scrollView2"
+        android:layout_x="25dp"
+        android:layout_y="40dp">
+
+        <TextView
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView"
+            android:layout_x="55dp"
+            android:layout_y="146dp"
+            android:textSize="23dp"
+            android:textColor="#ffffff"
+            android:background="#AA230066"/>
+    </ScrollView>
+
+</AbsoluteLayout>

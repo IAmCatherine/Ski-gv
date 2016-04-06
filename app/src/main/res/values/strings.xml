@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Горный воздух</string>
+    <string name="open_slopes">Открытые склоны</string>
+    <string name="lifts">Подъемники</string>
+    <string name="house_of_operation">Режим работы</string>
+    <string name="map">Карта комплекса</string>
+    <string name="info">О приложении</string>
+    <string name="weather">Погодные условия</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="NOOOO">Не удалось установить \n соединение с сетью  Интернет</string>
+</resources>
